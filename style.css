@@ -198,6 +198,12 @@ img {
     width: 20%;
 }
 
+.game-logo {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+}
+
 /* Utility classes */
 .container {
     max-width: 1440px;
