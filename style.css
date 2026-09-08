@@ -204,6 +204,88 @@ img {
     object-fit: cover;
 }
 
+/* ads */
+.icon-button {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 50px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.ad {
+    width: 200%;
+    height: 50px;
+}
+
+.overlay-text {
+    top: 50%;
+    left: 50%;
+    transform: translate(75%, -0%);
+    font-family: VCR;
+    color: #f1f1f1;
+    -webkit-text-stroke: 2px black;
+    font-size: 32px;
+    line-height: 1.5;
+    pointer-events: none;
+}
+
+.fake-ad-bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 50px;
+    width: 100%;
+    background-color: #f1f1f1;
+    border-top: 1px solid #ccc;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    font-family: sans-serif;
+    z-index: 9999;
+    overflow: hidden;
+}
+
+.ad-badge {
+    background-color: #ccc;
+    color: #333;
+    font-size: 10px;
+    font-weight: bold;
+    padding: 2px 4px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+.ad-text {
+    margin: 0;
+    font-size: 14px;
+    color: #333;
+    flex-grow: 1;
+    margin-left: 15px;
+}
+
+.ad-button {
+    background-color: #007bff;
+    color: white;
+    padding: 5px 12px;
+    border-radius: 3px;
+    text-decoration: none;
+    font-size: 13px;
+    margin-right: 15px;
+}
+
+.ad-close {
+    background: none;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    color: #666;
+}
+
+
 /* Utility classes */
 .container {
     max-width: 1440px;
