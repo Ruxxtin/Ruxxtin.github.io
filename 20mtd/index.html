@@ -1,0 +1,31 @@
+<body>
+  <div class="logo-button-wrapper">
+    <img
+      src="https://petinya.org/sites-google/logo-unblockedgames-en.png"
+      alt="Logo"
+    />
+    <button class="c-button" onclick="loadIframe()">
+      <b>Click for Game</b>
+    </button>
+    <div class="site-name">Unblocked Games</div>
+  </div>
+
+  <div class="game-window" id="iframe-container"></div>
+
+  <script>
+    function loadIframe() {
+      const iframeContainer = document.getElementById("iframe-container");
+      iframeContainer.innerHTML =
+        '<iframe src="https://script.google.com/macros/s/AKfycbx2IFRHO-Q3RsgjhwW_bUmXSIRPff-nBBosAEZeXD8Y0e9EpfFFjCjJZzPWvO5147UY/exec" allowfullscreen></iframe>';
+      iframeContainer.style.display = "block";
+
+      document.querySelector(".logo-button-wrapper").style.display = "none";
+    }
+  </script>
+  <style>
+    .gameContainer {
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+</body>
